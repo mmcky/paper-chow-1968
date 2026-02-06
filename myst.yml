@@ -1,0 +1,24 @@
+version: 1
+project:
+  title: "The Acceleration Principle and the Nature of Business Cycles"
+  authors:
+    - name: Gregory C. Chow
+  date: 1968-08-01
+  keywords:
+    - acceleration principle
+    - business cycles
+    - multiplier
+    - spectral density
+    - autocovariance
+    - linear stochastic systems
+  bibliography:
+    - paper/references.bib
+  toc:
+    - file: docs/index.md
+    - file: paper/paper.md
+
+site:
+  template: article-theme
+  options:
+    favicon: favicon.ico
+    base_url: /paper-chow-1968
