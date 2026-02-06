@@ -19,7 +19,7 @@ autocovariances and spectral densities.
 ## Contents
 
 - [Paper](../paper/paper.md) — Full text of the paper in MyST Markdown
-- [Companion Notebook](../jupyter/chow_1968_companion.ipynb) — Jupyter notebook exploring key ideas with Python demonstrations
+- [Companion Notebook](https://github.com/mmcky/paper-chow-1968/blob/main/jupyter/chow_1968_companion.ipynb) — Jupyter notebook exploring key ideas with Python demonstrations
 
 ## Key Contributions
 

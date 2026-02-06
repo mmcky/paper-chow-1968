@@ -16,9 +16,8 @@ project:
   toc:
     - file: docs/index.md
     - file: paper/paper.md
-    - file: jupyter/chow_1968_companion.ipynb
 
 site:
-  template: book-theme
+  template: article-theme
   options:
     base_url: /paper-chow-1968
