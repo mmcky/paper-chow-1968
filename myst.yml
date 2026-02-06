@@ -19,6 +19,6 @@ project:
     - file: jupyter/chow_1968_companion.ipynb
 
 site:
-  template: article-theme
+  template: book-theme
   options:
     base_url: /paper-chow-1968
