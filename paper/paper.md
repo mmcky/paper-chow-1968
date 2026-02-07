@@ -2,6 +2,8 @@
 title: The Acceleration Principle and the Nature of Business Cycles
 authors:
   - name: Gregory C. Chow
+    affiliations:
+      - Thomas J. Watson Research Center, IBM, Yorktown Heights, New York
 date: 1968-08-01
 venue: The Quarterly Journal of Economics, Vol. 82, No. 3 (Aug., 1968), pp. 403–418
 bibliography: references.bib
@@ -155,9 +157,10 @@ $$ (eq-12)
 
 or
 
-$$
+```{math}
+:enumerated: false
 G y_t = D_b y_{t-1},
-$$
+```
 
 we inquire whether, and under what conditions, the roots of $A = G^{-1} D_b$ will all be real and positive, assuming that the coefficients $a_i$ and $b_i$ are real and positive. First to be established is the nonsingularity of $G$. This is done by evaluating the roots of $G$.[^fn9] Write $G = I - F$, where the $i$-th row of $F$ is $(a_i, a_i, \ldots, a_i)$. $F$ has rank one, and hence only one nonzero root. This root is $\sum_{i=1}^{p} a_i$, as it can be easily checked. The roots of $G$ satisfy $|G - \mu I| = 0$ or $|F - (1 - \mu)I| = 0$, and are equal to one minus the roots of $F$, i.e., $1 - \sum a_i, 1, \ldots, 1$. Thus, $G$ is nonsingular if and only if $\sum a_i \neq 1$.
 
@@ -171,13 +174,14 @@ To show that the roots of $A$ are real, consider $A^{-1} = D_b^{-1} G$. Let $D_a
 
 To obtain a necessary and sufficient condition for all positive roots, observe that the roots of $D_b^{-1} G$ can be obtained from the following equivalent characteristic equations:
 
-$$
+```{math}
+:enumerated: false
 \begin{aligned}
 |D_b^{-1} G - \mu I| &= 0 \\
 |D_b^{-1/2} G D_b^{-1/2} - \mu I| &= 0 \\
 |D_b^{-1/2} D_a^{1/2} (D_a^{-1} G) D_a^{1/2} D_b^{-1/2} - \mu I| &= 0.
 \end{aligned}
-$$
+```
 
 Therefore, they are the same as the roots of the last symmetric matrix. The latter roots are all positive if and only if the roots of the symmetric matrix $D_a^{1/2}(D_a^{-1} G) D_a^{1/2}$ are; but the roots of $D_a^{1/2} (D_a^{-1} G) D_a^{1/2}$ are indeed those of $G$. As we have evaluated, the roots of $G$ are all positive if and only if $1 - \sum a_i$ is positive.
 
@@ -294,9 +298,10 @@ $$ (eq-27)
 
 and
 
-$$
+```{math}
+:enumerated: false
 \gamma_{ij, -k} = \gamma_{ji, k} = \sum_m d_{ji, m} \lambda_m^k \qquad (k = 1, 2, 3, \ldots).
-$$
+```
 
 Comparing the covariance function {eq}`eq-27` and the time path {eq}`eq-11` of the nonstochastic model, we see a formal resemblance: both are linear combinations of $\lambda_m^k$. In the nonstochastic case, the coefficients of {eq}`eq-11` depend on the initial values $y_{i0}$, or on the initial values $z_{i0}$ and $b_{ij}$. In the stochastic case, the coefficients of {eq}`eq-27` depend on the covariances $\gamma_{ij, 0}$, or, in terms of canonical variables, on $\gamma_{ij, 0}^*$ and $b_{ij}$.
 
@@ -553,9 +558,10 @@ $$ (eq-60)
 
 or
 
-$$
+```{math}
+:enumerated: false
 (1 + \lambda_1^2)\lambda_2 + (1 + \lambda_2^2)\lambda_1 - 4\lambda_1 \lambda_2 > 0.
-$$
+```
 
 The last inequality is equivalent to
 
@@ -645,9 +651,10 @@ $$ (eq-68)
 
 amounts to taking an infinite moving average of the random vectors $u_t$ with "geometrically declining" weights, $A^0, A^1, A^2, \ldots$, in matrix terms. Although there can be no distinct cycles if $A$ is a scalar between zero and one, the situation is different for a matrix $A$ with roots between zero and one. To put it differently, when neither of two (canonical) variables
 
-$$
+```{math}
+:enumerated: false
 z_{1t} = \lambda_1 z_{1, t-1} + \epsilon_{1t}, \quad z_{2t} = \lambda_2 z_{2, t-1} + \epsilon_{2t}
-$$
+```
 
 has distinct cycles (with $\lambda_1 = .1$ and $\lambda_2 = .9$, say), a linear combination, say $z_{1t} - .01 z_{2t}$, can have a peak in its spectral density.
 
@@ -656,15 +663,17 @@ has distinct cycles (with $\lambda_1 = .1$ and $\lambda_2 = .9$, say), a linear 
 
 Before concluding, I would like to comment briefly on the case when a root, say $\lambda_1$, is greater than one. For this case, {cite}`quenouille1957` has claimed that (A) any univariate time series
 
-$$
+```{math}
+:enumerated: false
 y_t = \lambda_1 y_{t-1} + \epsilon_t \qquad (\lambda_1 > 1)
-$$
+```
 
 can be decomposed into an exponential trend plus a stationary first-order series, that (B) the trend and the stationary series are respectively $x_t = \lambda_1 x_{t-1}$ and
 
-$$
+```{math}
+:enumerated: false
 y_t^* = \lambda_1^{-1} y_{t-1}^* + \eta_t
-$$
+```
 
 and that (C), in general, any nonstationary autoregressive process with real roots may be partitioned in a similar manner, where the remaining stationary scheme is determined by his discussion on identification. If assertions (A) and (B), or even (A) alone, are accepted, the trend in a nonstationary canonical variable can be eliminated, and the resulting system can be treated as stationary even if some roots are complex. This subject is discussed in another paper.[^fn18]
 
@@ -674,9 +683,10 @@ This paper has begun with a formulation of the acceleration principle. In a dete
 
 As far as the spectral densities of economic time series are concerned, {cite}`granger1966` has reported on a "typical spectral shape," i.e., $f(\omega)$ as a monotone decreasing function of $\omega$, and has suggested a set of first-order autoregressive equations, e.g.,
 
-$$
+```{math}
+:enumerated: false
 y_t = a y_{t-1} + \epsilon_t
-$$
+```
 
 to explain this shape. In view of the possibilities that economic models may contain complex roots, and that, even with only real and positive roots, they may generate distinct cycles, is one willing to accept this shape as a good approximation? Only more empirical work will tell. But the approach to ascertaining the spectral shape is perhaps not to do more spectral analysis (which applies little or no restriction on the density), but to analyze the spectral densities implicit in econometric models.[^fn19]
 

@@ -3,6 +3,8 @@ project:
   title: "The Acceleration Principle and the Nature of Business Cycles"
   authors:
     - name: Gregory C. Chow
+      affiliations:
+        - Thomas J. Watson Research Center, IBM, Yorktown Heights, New York
   date: 1968-08-01
   keywords:
     - acceleration principle
